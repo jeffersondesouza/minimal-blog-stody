@@ -1,0 +1,10 @@
+<header class="masthead">
+  <h1 class="masthead-title">
+    <a href="{{site.baseurl}}/">{{ site.title }}&#39;s blog</a>
+  </h1>
+  <nav class="masthead-nav">
+    {%for link in site.pages %}
+    <a href="{{ link.url | prepend:site.baseurl }}"> {{ link.title }}</a>
+    {% endfor %}
+  </nav>
+</header>
